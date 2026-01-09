@@ -1,21 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
-"""
-#SBATCH --partition=genoa
-#SBATCH --nodes=1
-#SBATCH --ntasks=192
-#SBATCH --time=120:00:00
-#SBATCH --job-name=Bubble_L_rise_5
-#SBATCH --output=out-Bubble_L_rise_5.txt
-#SBATCH --error=error-Bubble_L_rise_5.txt
-
-Description:
-  This script replicates the logic of the original bash script to run multiple
-  parameter sets of a Python program (run.py) with a simple concurrency limit
-  on Windows or Linux, launching up to NPARA tasks simultaneously.
-"""
-
 import os
 import time
 import subprocess

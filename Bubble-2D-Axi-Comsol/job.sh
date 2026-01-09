@@ -19,7 +19,7 @@ cores=24
 ###################
 # Parallel settings
 ###################
-NPARA=8         # Maximum number of concurrent tasks
+NPARA=4         # Maximum number of concurrent tasks
 
 ############################################
 # Function: Check tasks and remove finished

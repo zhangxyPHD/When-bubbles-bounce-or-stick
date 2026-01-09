@@ -8,17 +8,17 @@ import subprocess
 # --------------------
 # Define parameters
 # --------------------
-L_rise = 20
-Bos = ["1e1", "1e0", "1e-1", "1e-2", "1e-3", "1e-4"]
-Gas = ["3", "4", "5", "6", "7", "8", "10", "15", "20", "25", "30", "35", "40", "50", "60", "80", "100"]
+L_rise = 5
+Bos = ["1e-2"]
+Gas = ["100", "80", "60", "50", "40", "35", "30", "25", "20", "15", "10", "8", "7", "6", "5", "4", "3"]
 
 refine_num = 8
 t_step = 0.01
-t_max = 40
+t_max = 4010
 cores = 24
 
 # Concurrency limit
-NPARA = 1  # Maximum number of concurrent tasks
+NPARA = 4  # Maximum number of concurrent tasks
 
 # List to store active subprocesses
 tasks = []
